@@ -7,4 +7,12 @@ Low-code AI Agents &amp; Voice Agents in n8n v2.0 using ElevenLabs, Agentic RAG,
 - Telegram
 - Slack
 - Elevenlabs
+- Supabase
+
+# RAG vs Agentic RAG
+
+RAG - Retrieval Augmented Generation - Rather than sending all data, you give a subset of the one that is relevant
+
+chat -> Vectorised based Retrieval  -> LLM
+
   
