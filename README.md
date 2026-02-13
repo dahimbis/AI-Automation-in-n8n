@@ -16,4 +16,7 @@ RAG - Retrieval Augmented Generation - Rather than sending all data, you give a 
 
 chat -> Vectorised based Retrieval  -> LLM
 
+# cloud vs Local Hosting
+for local hosting - N8N runs using Docker and 'npm'
+
   
