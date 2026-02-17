@@ -1,0 +1,89 @@
+{
+  "name": "Google drive and Push Over",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "value": "1j0uaLhaIroD0OCig2j7ji5_syiSfJkt5",
+          "mode": "list",
+          "cachedResultName": "n8n_amplify",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1j0uaLhaIroD0OCig2j7ji5_syiSfJkt5"
+        },
+        "event": "fileCreated",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "f1a67299-fb32-4c7d-8ebb-aca8b84c26da",
+      "name": "Google Drive Trigger",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "fkWSHLoNrlETaRmh",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "userKey": "up9grehxdbaufmvi3tnm3j44c3snt3",
+        "message": "Hi new file",
+        "priority": 1,
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.pushover",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "4f10b201-a7b0-4fb1-8483-b374e4cde672",
+      "name": "Push a message",
+      "credentials": {
+        "pushoverApi": {
+          "id": "nllg1aLtAcUtNcba",
+          "name": "Pushover account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Drive Trigger": {
+      "main": [
+        [
+          {
+            "node": "Push a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "bba24c7d-0301-4bb9-a99a-25e882c85f9e",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "9d92c7aa5ff68481ef3ab8e50426201d259e19f650a140ff0dbe1d88bc2470ad"
+  },
+  "id": "31Tht1bBBlF8Z-0tliFn7",
+  "tags": []
+}
