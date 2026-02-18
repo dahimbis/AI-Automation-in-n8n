@@ -1,0 +1,73 @@
+{
+  "name": "MCP Server Trigger",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "d5fac342-10d4-4ec6-9c75-97722adf8ab4"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 2,
+      "position": [
+        -128,
+        16
+      ],
+      "id": "fe9929df-4313-4ae8-a4ec-1394ea216f74",
+      "name": "MCP Server Trigger",
+      "webhookId": "d5fac342-10d4-4ec6-9c75-97722adf8ab4"
+    },
+    {
+      "parameters": {
+        "description": "Call this tool to find sells for a given sales query",
+        "workflowId": {
+          "__rl": true,
+          "value": "Gf5TGmUaetG9HLIU",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/Gf5TGmUaetG9HLIU",
+          "cachedResultName": "sub_agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        320,
+        80
+      ],
+      "id": "11b84455-0be6-4c5c-8f0a-c749b9e6bd5c",
+      "name": "Call 'sub_agent'"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Call 'sub_agent'": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "48f3220b-803e-4112-b9f1-0fd29648030c",
+  "meta": {
+    "instanceId": "9d92c7aa5ff68481ef3ab8e50426201d259e19f650a140ff0dbe1d88bc2470ad"
+  },
+  "id": "x7iLg9e_hEIMKhOCEgbpm",
+  "tags": []
+}
