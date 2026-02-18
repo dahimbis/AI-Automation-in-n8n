@@ -8,7 +8,10 @@ Low-code AI Agents &amp; Voice Agents in n8n v2.0 using ElevenLabs, Agentic RAG,
 - Slack
 - Elevenlabs
 - Supabase
-- Twilio 
+- Twilio
+- Firecrawl
+- Pipedrive
+- Hunter.io
 
 # RAG vs Agentic RAG
 
