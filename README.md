@@ -1,5 +1,5 @@
 # AI Automation in n8n: Build Agents and Voice Agents
-Low-code AI Agents &amp; Voice Agents in n8n v2.0 using ElevenLabs, Agentic RAG, MCP
+Low-code AI Agents &amp; Voice Agents in n8n using ElevenLabs, Agentic RAG, MCP
 
 # Tools and APIs setup
 - Pushover Notifications
